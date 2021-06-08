@@ -37,7 +37,7 @@ Connect to an external/3rd party API and read data into your app Visualize data 
 Things I would like to do as stretch features:
 Webscraping-  Specific information on random waves of symtoms of Covid or people who are "functional" but have lingering symtoms
 Django
-Video- Have a concept but would love to hear best way to do it.
+Video- Have a concept but would love to hear best way to do it so entertaining.
 
 
 
