@@ -270,9 +270,6 @@ def print_hi(name):
     main()
 
 
-if __name__ == '__main__':
-    print_hi('Dancers, we will convert each kg to pounds and divide each pound by 3500 calories to get weight loss ')
-
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
