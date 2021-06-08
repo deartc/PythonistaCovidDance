@@ -34,6 +34,13 @@ Implement a regular expression (regex) to ensure a field either a phone number o
 
 Connect to an external/3rd party API and read data into your app Visualize data in a graph, chart, or other visual representation of data NOTE: Tried to work on this and it is work in progress!
 
+Things I would like to do as stretch features:
+Webscraping-  Specific information on random waves of symtoms of Covid or people who are "functional" but have lingering symtoms
+Django
+Video- Have a concept but would love to hear best way to do it.
+
+
+
 Correct use of Git/Github and commits: I followed the correct steps in the project guidelines to create and name the github repository that would reflect a distinct repository. I then used the proper guidelines to initialize the project and add files using git bash and the command line. I then far exceeded the minimum number of commits needed to pass.
 
 
