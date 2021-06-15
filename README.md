@@ -21,7 +21,7 @@ I satisfied the following components:
   
 6.    I also built a conversion tool that satisfies a requirement that converts the user input of one type lbsto another type  (calories) because I used calories in another requirement.
 
-7.   I  used tkinter to use calculate burnt calories based on weight, heart rate, duration, sex, and minutes. (Although it works in Thonny, it doesn't work in pycharm I think because the data has to be in same folder so it is a work in progress and I haven't included it in the project yet.
+
 
 
 Requirements not fully used yet:
