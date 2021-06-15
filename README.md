@@ -1,6 +1,6 @@
 # PythonistaCovidDance
 
-My project was done in Pycharm. To run my project, first clone my project. My python needs to be opened in py3. Input a value into pounsa to convert them into calories.  Then, there will be and prompt to input  the calories each day of the week after the prompt.  There will then be affirmations to encourage dancers recovering from Covid.  After the dictionary of dances run, there will be a dancing choice game.  The player has to select one of the three dance choices.    
+My project was done in Pycharm. To run my project, first clone my project. My python needs to be opened in py3. Input a value into pounds to convert them into calories.  Then, there will be a prompt to input  the calories each day of the week after the prompt.  There will then be affirmations to encourage dancers recovering from Covid.  After the dictionary of dances run, there will be a dancing choice game.  The player has to select one of the three dance choices and select from choices.   
 My python project involves developing a fitness regimen after having Covid. I realized that coding about an exercise program after Covid totally changed how I felt about the process because I finally was researching why there were valid reasons why my body had setbacks (underreported random waves of symptoms).
 Although I am an environmental quality assurance analyst, I am also a certified group fitness (AFAA and NASM certified) instructor. As someone who was training for my third marathon at the time I contracted Covid  but had difficulty walking even five minutes after Covid, I assumed I would quickly find a fitness regimen. I was shocked at the lack of information for people who have lingering symptoms and wanted to get back in shape. I wanted to use my coding project to inspire myself and others trying to get back to peak health after Covid. I chose dancing because it has the necessary emotional component (I'm certified in the Lablast ballroom fitness program) that is helpful from those trying to deal with decreased health especially when experiencing underreported random waves of negative symptoms after Covid. Dancing also has different styles with different bpm (beats per minute) and my code can also educate people on styles and the slower bpm they can utilize so they can safely exercise. 
 
@@ -19,7 +19,7 @@ I satisfied the following components:
 
 5. This option of selecting three dances program satisfied the requirement of implementing a “master loop” console application where the user can repeatedly enter commands/perform actions. I created a computer generated computer game to entertain players with the this intersection of dance styles (intermediate dance styles). I asked the user to chose from these three dance styles. The computer (the instructor) also chose a style. The player (dancer) gets to choose if the random pick is selected as the same dance style. 
   
-6.    I also built a conversion tool that satisfies a requirement that converts the user input of one type kg to another type (lbs) and then displays calories because I used calories in another requirement.
+6.    I also built a conversion tool that satisfies a requirement that converts the user input of one type lbsto another type  (calories) because I used calories in another requirement.
 
 7.   I  used tkinter to use calculate burnt calories based on weight, heart rate, duration, sex, and minutes. (Although it works in Thonny, it doesn't work in pycharm I think because the data has to be in same folder so it is a work in progress and I haven't included it in the project yet.
 
@@ -29,16 +29,15 @@ Requirements not fully used yet:
 Read data from an external file, such as text, JSON, CSV, etc and use that data in your application. NOTE: Tried Kaggle to import exercise data so might include if I can work on further and include.  I wanted to included exercise data.  
 
 
-Implement a log that records errors, invalid inputs, or other important events and writes them to a text file .  I would love to include this one to help in my job search in quality assurance.
+Implement a log that records errors, invalid inputs, or other important events and writes them to a text file . 
 
 Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format
 
 Connect to an external/3rd party API and read data into your app Visualize data in a graph, chart, or other visual representation of data NOTE: Tried to work on this and it is work in progress!
 
 Things I would like to do as stretch features:
-Webscraping-  Specific information on random waves of symtoms of Covid or people who are "functional" but have lingering symtoms
-Django
-Video- Have a concept but would love to hear best way to do it so entertaining.
+Webscraping-  Specific information on covid lingering symptoms.
+Video- Have a concept but details not worked out.
 
 
 
