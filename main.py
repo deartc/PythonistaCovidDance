@@ -11,6 +11,7 @@ b = datetime.datetime(2021, 5, 22, 8, 21, 10)
 c = a - b
 print('Difference between Fitness Start Date and End Date: ', c)
 
+
 #  code greeting dancers and also an exit code
 # code that converts   pounds (used in US) to calories (used in previous step of program)
 
@@ -164,3 +165,9 @@ while player == False:
         print("That's not a valid play. Check your spelling!")
 
 
+def print_hi(name):
+    # Use a breakpoint
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    
+if __name__ == '__main__':
+    print_hi('Dancers')
