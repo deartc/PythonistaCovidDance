@@ -1,5 +1,15 @@
 import datetime
+import re
+# extract emails from String By Regular Expression to meet criteria
 
+s = """ Group fitness dance class information email lablastlablass@gmail.com
+         and the website pythonistacoviddance@google.com"""
+
+# \S matches any non-whitespace,@ for as in the Email
+# + for Repeats a character one or more times
+Contact = re.findall('\S+@\S+', s)
+print(Contact)
+# import datetime and format date for current date and future date to meet criteria
 Current_Date_Formatted = datetime.datetime.today().strftime('%d-%b-%Y')
 print('Fitness Start Date: ' + str(Current_Date_Formatted))
 
@@ -16,9 +26,9 @@ print('Difference between Fitness Start Date and End Date: ', c)
 # code that converts   pounds (used in US) to calories (used in previous step of program)
 
 
-def print_hi(name):
+def print_bye(name):
     # Use a breakpoint in the code line.
-    print(f'Hi, {name}')
+    print(f'bye, {name}')
     # Press Ctrl+F8 to toggle the breakpoint.
     ## to enter a weight in pounds.
     # The program should convert it to Calories.
@@ -166,8 +176,10 @@ while player == False:
 
 
 def print_hi(name):
-    # Use a breakpoint
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-    
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Bye, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('Dancers')
