@@ -25,6 +25,8 @@ I satisfied the following components:
 
 7. Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format. I used my email address and implemented a regex to ensure it was stored in same format.  
 
+8.  I implemented a unit test for my program.  The report indicated no errors in .03 seconds.
+
 Correct use of Git/Github and commits: I followed the correct steps in the project guidelines to create and name the github repository that would reflect a distinct repository. I then used the proper guidelines to initialize the project and add files using git bash and the command line. I then far exceeded the minimum number of commits needed to pass.
 
 
