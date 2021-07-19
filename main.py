@@ -1,5 +1,20 @@
+# import datetime and format date for current date and future date to meet criteria
 import datetime
+# import re for regular expressions
+import re
+# import random for dance game
+import random
 
+# extract emails from String By Regular Expression to meet criteria
+
+s = """ Group fitness dance class information email lablastlablass@gmail.com
+         and the website pythonistacoviddance@google.com"""
+
+# \S matches any non-whitespace,@ for as in the Email
+# + for Repeats a character one or more times
+Contact = re.findall('\S+@\S+', s)
+print(Contact)
+# code for  datetime and format date for current date and future date to meet criteria
 Current_Date_Formatted = datetime.datetime.today().strftime('%d-%b-%Y')
 print('Fitness Start Date: ' + str(Current_Date_Formatted))
 
@@ -7,80 +22,18 @@ print('Fitness Start Date: ' + str(Current_Date_Formatted))
 a = datetime.datetime(2021, 5, 29, 18, 25, 30)
 b = datetime.datetime(2021, 5, 22, 8, 21, 10)
 
-# returns a timedelta object
+# returns the Time difference in days
 c = a - b
 print('Difference between Fitness Start Date and End Date: ', c)
 
-100
+# code that meets project criteria of conversion.  Pounds  to calories (used in previous step of program)
 
-# This is code converting Kilograms into pounds and calories
-
-#  code greeting dancers and also an exit code
-# code that converts kg (metric) to pounds (used in US) to calories (used in previous step of program)
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-    import tkinter as tk
-
-    def main():
-        window = tk.Tk()
-        window.title("Kilograms to Pounds to Calories  Converter")
-        window.geometry("375x200")
-
-        # create a label with text Enter Kilograms
-        label1 = tk.Label(window, text="Enter Kilograms:")
-
-        # create a label with text Pounds:
-        label2 = tk.Label(window, text="Pounds to Calories:")
-
-        # create a label with text Calories:
-        label3 = tk.Label(window, text="Calories:")
-
-        # place label1 in window at position x,y
-        label1.place(x=50, y=30)
-
-        # create an Entry widget (text box)
-
-        textbox1 = tk.Entry(window, width=12)
-
-        # place textbox1 in window at position x,y
-        textbox1.place(x=200, y=35)
-
-        # place label2 in window at position x,y
-        label2.place(x=50, y=100)
-
-        # create a label3 with empty text:
-        label3 = tk.Label(window, text=" ")
-
-        # place label3 in window at position x,y
-        label3.place(x=180, y=100)
-
-        # create a label4 with empty text:
-        label4 = tk.Label(window, text=" ")
-
-        # place label4 in window at position x,y
-        label3.place(x=240, y=130)
-
-        def btn1_click():
-            pounds = round(float(textbox1.get()) * 2.20462 * 3500, 5)
-            label3.configure(text=str(pounds) + '  Calories')
-
-        # create a button with text Button 1
-        btn1 = tk.Button(window, text="Click Me To Convert", command=btn1_click)
-        # place this button in window at position x,y
-        btn1.place(x=90, y=150)
-        window.mainloop()
-
-    main()
+pounds = float(input('Enter weight in Pounds(Lbs) to Convert into Calories:'))
+Cals = pounds * 3500
+print(pounds, ' Pounds (Lbs) are equal to', Cals, 'Calories (Calories)')
 
 
-if __name__ == '__main__':
-    print_hi('Dancers')
-
-
-def getCalories(question):  # ask how many calories burned
+def get(question):  # ask how many calories burned
     calories = input(question)
     if calories.isdigit():  # Check to see if calories are float or integer
         calories = int(calories)
@@ -88,10 +41,10 @@ def getCalories(question):  # ask how many calories burned
             return calories
         else:
             print("Invalid input")
-            return getCalories(question)  # If fail, the function must run again
+            return get(question)  # If fail, the function must run again
     else:
         print("Use positive numbers")
-        return getCalories(question)
+        return get(question)
 
 
 print("This is how many calories you could burn dancing\n")
@@ -99,7 +52,7 @@ print("Please enter your calories for the last 7 days")
 
 week = []
 for i in range(7):
-    day = getCalories(question="Day " + str(i + 1) + ":")
+    day = get(question="Day " + str(i + 1) + ":")
     week.append(day)
 
 total = sum(week)
@@ -117,25 +70,25 @@ elif total < 800:
 test_string = "Fitness after Covid requires patience"
 
 # string is printed
-print("The original string is : " + test_string)
+print("The motivation sentence is : " + test_string)
 
 # words counted
-res = len(test_string.split())
+res1 = len(test_string.split())
 
 # result is printed
-print("The number of words in string are : " + str(res))
+print("The number of words in string are : " + str(res1))
 
 # string is initialized
 test_string = "You must slowly build up to your fitness level"
 
 # string is printed
-print("The original string is : " + test_string)
+print("The second motivational sentence is : " + test_string)
 
 # words counted
-res = len(test_string.split())
+res2 = len(test_string.split())
 
 # result is printed
-print("The number of words in string are : " + str(res))
+print("The number of words in string are : " + str(res2))
 
 # string is initialized
 test_string = "Rest between each dance if you need to sit down"
@@ -144,24 +97,34 @@ test_string = "Rest between each dance if you need to sit down"
 print("The original string is : " + test_string)
 
 # words counted
-res = len(test_string.split())
+res3 = len(test_string.split())
 # result is printed
-print("The number of words in string are : " + str(res))
+print("The number of words in string are : " + str(res3))
 
 # string is initialized
 test_string = "Increase your emotional involvement in the dance as you lower your physical involvement"
 
 # string is printed
-print("The original string is : " + test_string)
+print("The third motivational sentence is : " + test_string)
 
-# words counted
-res = len(test_string.split())
+res4 = len(test_string.split())
 # result is printed
-print("The number of words in string are : " + str(res))
+print("The number of words in string are : " + str(res4))
+
+
+test_string = """Python coding during Covid is positive and allows for
+needed exercise breaks. Coding about  getting better reduces stress.  Dance exercise allows for interval training."""
+
+# string is printed
+print("The Motivation paragraph is : " + test_string)
+
+res5 = len(test_string.split())
+# result is printed
+print("The number of words in string are : " + str(res5))
 
 dict1 = {'bolero': 100, 'disco': 110, 'tango': 80,
-         'waltz': 90, 'samba': 100, 'merengue': 60}
-dict2 = {'quickstep': 200, 'rhumba': 130, 'salsa': 200, 'samba': 100, 'east coast swing': 140, 'jive': 160,
+         'waltz': 90, 'samba': 100, 'rumba': 60}
+dict2 = {'quickstep': 200, 'cha cha': 130, 'salsa': 200, 'samba': 100, 'east coast swing': 140, 'jive': 160,
          'bolero': 100, 'hustle': 110}
 result = {}
 
@@ -179,44 +142,86 @@ for key in dict1:
 
 print("Dances that  are intermediate bpm100"
       " ", result)
+# Two player  dance game (dance instructor and dance student are the players
+# Enter number as the selection
+# game rules -bolero tops samba
+# game rules - disco dances over bolero
+# game rules - samba sways over disco
+# Dance student gets a turn determined by random
+# Dance instructor gets a turn determined by random
+# The dance winner (or next dance in class) is determined by games rules
 
-from random import randint
 
-# create a list of dance options
-t = ["samba", "bolero", "disco"]
+while True:
+    print("Enter  number answer \n 1. samba \n 2. bolero \n 3. disco \n")
 
-# random play assigned to the computer
-computer = t[randint(0, 2)]
+    # take the input from Dance Student
+    answer = int(input("Dance Student turn: "))
 
-# set player to False so we can create continuous play
-player = False
+    #  Dance Student loop excludes invalid data
+    while answer > 3 or answer < 1:
+        answer = int(input("enter valid input: "))
 
-while player == False:
-    # set player to True
-    player = input("samba, bolero, disco?")
-    if player == computer:
-        print("Both instructor and dancer picks same dance!")
-    elif player == "samba":
-        if computer == "bolero":
-            print(computer, "steps over", player)
-        else:
-            print(player, "is selected over", computer)
-    elif player == "bolero":
-        if computer == "disco":
-            print(computer, "steps over", player)
-        else:
-            print(player, "is selected over", computer)
-    elif player == "disco":
-        if computer == "samba":
-            print(computer, "steps over", player)
-        else:
-            print(player, "is selected over", computer)
+    # initialize variables
+    if answer == 1:
+        answer_name = 'samba'
+    elif answer == 2:
+        answer_name = 'bolero'
     else:
-        print("That's not a valid play. Check your spelling!")
-    # To set up continuous loop we set the player to false
-    player = False
-    computer = t[randint(0, 2)]
+        answer_name = 'disco'
 
+    # print Dance Student answer
+    print("Dance Student answer is: " + answer_name)
+    print("\nNow its Dance Instructor turn.......")
 
+    # Dance Instructor chooses randomly any number
+    comp_answer = random.randint(1, 3)
 
+    # looping until comp_answer value
+    # is equal to the answer value
+    while comp_answer == answer:
+        comp_answer = random.randint(1, 3)
 
+    # initialize value of comp_answer_name
+    # variable corresponding to the answer value
+    if comp_answer == 1:
+        comp_answer_name = 'samba'
+    elif comp_answer == 2:
+        comp_answer_name = 'bolero'
+    else:
+        comp_answer_name = 'disco'
+
+    print("Dance Instructor answer is: " + comp_answer_name)
+
+    print(answer_name + " V/s " + comp_answer_name)
+
+    # condition for winning
+    if ((answer == 1 and comp_answer == 2) or
+            (answer == 2 and comp_answer == 1)):
+        print("bolero wins => ", end="")
+        result = "bolero"
+
+    elif ((answer == 1 and comp_answer == 3) or
+          (answer == 3 and comp_answer == 1)):
+        print("samba wins =>", end="")
+        result = "samba"
+    else:
+        print("disco wins =>", end="")
+        result = "disco"
+
+    # Printing either Dance Student or Dance Instructor wins
+    if result == answer_name:
+        print("<== Dance Student wins ==>")
+    else:
+        print("<== Dance Instructor wins ==>")
+
+    print("Do you want to play again? (Y/N)")
+    ans = input()
+
+    # if Dance Student input n or N then condition is True
+    if ans == 'n' or ans == 'N':
+        break
+#  loop exit
+#  print thanks for playing
+
+print("\nThanks for playing and dancing")
