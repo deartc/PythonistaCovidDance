@@ -25,7 +25,7 @@ I satisfied the following components:
 
 7. I also satisfied the requirement of creating and calling at least 3 functions or methods, at least one of which must return a value that is used somewhere else in the code. I determined how to calculate calories. I then calculated the calorie count for one week.
 
-8.  I implemented a unit test for my program.  The report indicated no errors in .03 seconds.
+
 
 Correct use of Git/Github and commits: I followed the correct steps in the project guidelines to create and name the github repository that would reflect a distinct repository. I then used the proper guidelines to initialize the project and add files using git bash and the command line. I then far exceeded the minimum number of commits needed to pass.
 
