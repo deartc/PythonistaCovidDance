@@ -5,6 +5,7 @@ import re
 # import random for dance game
 import random
 
+
 # extract emails from String By Regular Expression to meet criteria
 
 s = """ Group fitness dance class information email lablastlablass@gmail.com
@@ -25,6 +26,7 @@ b = datetime.datetime(2021, 5, 22, 8, 21, 10)
 # returns the Time difference in days
 c = a - b
 print('Difference between Fitness Start Date and End Date: ', c)
+
 
 # code that meets project criteria of conversion.  Pounds  to calories (used in previous step of program)
 
@@ -65,6 +67,64 @@ if total > 400:
     print("\nYou are doing great. You will build up endurance in time")
 elif total < 800:
     print("\nYou have built up endurance. Congratulations")
+
+#bmi in pounds and inches
+def bmi_start():
+    print("Body Mass Index (BMI) calculator!")
+    print("List your weight and height")
+    print("Determine Body Mass Index")
+    print("Safely encourage healthy habits")
+
+def det():
+    bmi_start()
+    get_height = 0.0
+    get_weight = 0.0
+    body_mass_index = 0.0
+    get_height = float(input("Please enter your height in inches. "))
+    get_weight = float(input("Please enter your weight in pounds. "))
+    body_mass_index = (get_weight * 703) / (get_height ** 2)
+    if body_mass_index < 18.5:
+        print("A person with a BMI of " + str(body_mass_index ) + " is underweight ")
+    elif body_mass_index < 24.9:
+        print("A person with a BMI of " + str(body_mass_index ) + " is normal weight ")
+    else:
+        print("A person with a BMI of " + str(body_mass_index ) + " is overweight ")
+
+det ()
+
+#determine bmi in metric
+
+def met_bmi(height, weight):
+    #calculate (BMI)
+    return weight / height**2
+
+
+def des_bmi(bmi):
+    #evaluate bmi
+    if 18.5 <= bmi <= 24.9:
+        return 'normal weight'
+
+    if bmi >= 25:
+        return 'overweight'
+
+    return 'underweight'
+
+
+def trial():
+    try:
+        height = float(input('Enter your height (meters):'))
+        weight = float(input('Enter your weight (kilograms):'))
+
+    except ValueError as error:
+        print(error)
+    else:
+        bmi = round(met_bmi(height, weight), 1)
+        evaluation = des_bmi(bmi)
+
+        print(f'Your body mass index is {bmi}')
+        print(f'This is considered {evaluation}!')
+
+trial()
 
 # string is initialized
 test_string = "Fitness after Covid requires patience"
@@ -119,13 +179,13 @@ needed exercise breaks. Coding about  getting better reduces stress.  Dance exer
 print("The Motivation paragraph is : " + test_string)
 
 res5 = len(test_string.split())
-# result is printed
+# result is printed10
 print("The number of words in string are : " + str(res5))
 
-dict1 = {'bolero': 100, 'disco': 110, 'tango': 80,
+dict1 = {'bolero': 100, 'disco': 100, 'tango': 80,
          'waltz': 90, 'samba': 100, 'rumba': 60}
 dict2 = {'quickstep': 200, 'cha cha': 130, 'salsa': 200, 'samba': 100, 'east coast swing': 140, 'jive': 160,
-         'bolero': 100, 'hustle': 110}
+         'bolero': 100, 'disco': 100}
 result = {}
 
 print("Slower bpm dances", dict1)
