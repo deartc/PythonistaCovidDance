@@ -23,7 +23,7 @@ I satisfied the following components:
 
 6. I also implemented a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format at the start of my program. I used my email address and implemented a regex to ensure it was stored in same format.
 
-7. I also satisfied the requirement of creating and calling at least 3 functions or methods, at least one of which must return a value that is used somewhere else in the code. I determined how to calculate calories. I then calculated the calorie count for one week. I then calculated  a bmi  by  weight and height.  I did one in English version and one in metric version to satisfy this requirement of calling 3 functions or methods.  
+7. I also satisfied the requirement of creating and calling at least 3 functions or methods, at least one of which must return a value that is used somewhere else in the code. I determined how to calculate calories from pounds. I then calculated the calorie count for one week. I then calculated  a bmi  by  weight (pounds) and height in the  English conversion.  I also did a  metric version to satisfy this requirement of calling 3 functions or methods.  
 
 
 
