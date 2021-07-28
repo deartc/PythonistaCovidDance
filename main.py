@@ -70,10 +70,12 @@ elif total < 800:
 
 #bmi in pounds and inches
 def bmi_start():
-    print("Body Mass Index (BMI) calculator!")
+    print("Body Mass Index (BMI) calculator")
     print("List your weight and height")
     print("Determine Body Mass Index")
     print("Safely encourage healthy habits")
+
+# determine bmi in nonmetric.  This code was in Tkinter to learn the concepts before I modified code
 
 def det():
     bmi_start()
@@ -84,15 +86,16 @@ def det():
     get_weight = float(input("Please enter your weight in pounds. "))
     body_mass_index = (get_weight * 703) / (get_height ** 2)
     if body_mass_index < 18.5:
-        print("A person with a BMI of " + str(body_mass_index ) + " is underweight ")
+        print("A person with a BMI of " + str(body_mass_index ) + " is underweight  or  a tiny dancer ")
     elif body_mass_index < 24.9:
         print("A person with a BMI of " + str(body_mass_index ) + " is normal weight ")
     else:
-        print("A person with a BMI of " + str(body_mass_index ) + " is overweight ")
+        print("A person with a BMI of " + str(body_mass_index ) + " could be ligher on their feet ")
 
+    
 det ()
 
-#determine bmi in metric
+#determine bmi in metric and to learn  try except error concept
 
 def met_bmi(height, weight):
     #calculate (BMI)
@@ -105,11 +108,11 @@ def des_bmi(bmi):
         return 'normal weight'
 
     if bmi >= 25:
-        return 'overweight'
+        return 'could be lighter on your feet'
 
-    return 'underweight'
+    return 'tiny dancer'
 
-
+#used try except value error at least once in project to understand concept
 def trial():
     try:
         height = float(input('Enter your height (meters):'))
@@ -119,14 +122,14 @@ def trial():
         print(error)
     else:
         bmi = round(met_bmi(height, weight), 1)
-        evaluation = des_bmi(bmi)
+        statement = des_bmi(bmi)
 
         print(f'Your body mass index is {bmi}')
-        print(f'This is considered {evaluation}!')
+        print(f'This is considered {statement}!')
 
 trial()
 
-# string is initialized
+# string is initialized to determine how many words in sentences and paragraphs
 test_string = "Fitness after Covid requires patience"
 
 # string is printed
@@ -181,6 +184,8 @@ print("The Motivation paragraph is : " + test_string)
 res5 = len(test_string.split())
 # result is printed10
 print("The number of words in string are : " + str(res5))
+
+#this is the dictionary of dance styles
 
 dict1 = {'bolero': 100, 'disco': 100, 'tango': 80,
          'waltz': 90, 'samba': 100, 'rumba': 60}
